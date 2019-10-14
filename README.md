@@ -109,11 +109,12 @@ Structure of the catalytic subunit of PKA (kinase domain):
 ![Structure of the catalytic subunit of PKA](./figs/pka.png)
 ![catalytic subunit of PKA 3D](./figs/pka3d.png)
 
-- Glycine-rich region: binds the phospates of the ATP.
-- K72: bind the alpha- and beta-phosphate of TAP.
+- Glycine-rich region: binds the phospates of the ATP (`GTGSFG`).
+- K72: bind the alpha- and beta-phosphate of TAP (`AMKIL`).
 - E91: when not active, glutamate 91 forms salt bridge with lysine
   168; breaks upon activation of the protein.
-- K168: transition state stabilization.
-- D166: base catalyst.
-- D184, N171: Mg2+ binding (Mg-ATP)
+- K168: transition state stabilization (`YRDLK`).
+- D166: base catalyst (`YRDLK`).
+- D184 and N171: Mg2+ binding (Mg-ATP) (D184 and activation loop
+  `DFGFAKRVKGRTWTLCGTPEYLAPE`)
 - E208, D230: substrate binding (substrate RRXS recognition motif).
