@@ -44,7 +44,7 @@
 
 ### MSMS search
 
-- Download the input data (in [mgf
+- Download the [input data](./test.mgf) (in [mgf
   format](http://www.matrixscience.com/help/data_file_help.html)) and
   familiarise yourself with it.
 - Plot one of these MSMS spectra
