@@ -54,6 +54,9 @@
   server](http://www.matrixscience.com/search_form_select.html). Use
   the following [data](./test.mgf), which is (part of) a MSMS run from
   a single protein band extracted from a gel.
+
+![gel band and its elution profile](./figs/gel.jpg)
+
 - Use the following search parameters: Instrument *ESI-TRAP*, variable
   modification *oxidation*, search databases *contaminants and
   SwissProt*, enzyme *Trypsin* with up to 1 mis-cleavage, taxonomy
