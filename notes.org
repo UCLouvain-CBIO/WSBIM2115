@@ -1,5 +1,0 @@
-- Download protein in first exercise from diffrent species from UniProt
-
-
-- Align them with [[https://www.ebi.ac.uk/Tools/msa/clustalo/][Clustal]]
-- Identify conserved and variable regions

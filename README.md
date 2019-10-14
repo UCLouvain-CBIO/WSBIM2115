@@ -53,7 +53,10 @@
 - Run an MSMS search using the free [Matrix Science Mascot
   server](http://www.matrixscience.com/search_form_select.html). Use
   the following [data](./test.mgf), which is (part of) a MSMS run from
-  a single protein band extracted from a gel.
+  a single protein band extracted from a gel. The protein of interest
+  was [tagged with Glutathione S-transferase
+  (GST)](https://en.wikipedia.org/wiki/Glutathione_S-transferase#GST-tags_and_the_GST_pull-down_assay)
+  for purification.
 
 ![gel band and its elution profile](./figs/gel.jpg)
 
