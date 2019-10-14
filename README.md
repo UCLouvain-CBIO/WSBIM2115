@@ -47,16 +47,24 @@
 - Download the [input data](./test.mgf) (in [mgf
   format](http://www.matrixscience.com/help/data_file_help.html)) and
   familiarise yourself with it.
-- Plot one of these MSMS spectra
+- Plot (by hand if you prefer) one of these MSMS spectra. The smallest
+  one is peak the 234th spectrum in the file (search for
+  `TITLE=13161`).
 - Run an MSMS search using the free [Matrix Science Mascot
-  server](http://www.matrixscience.com/search_form_select.html)
-- Interprete the results. Use the following
-  [data](./test.mgf).
+  server](http://www.matrixscience.com/search_form_select.html). Use
+  the following [data](./test.mgf), which is (part of) a MSMS run from
+  a single protein band extracted from a gel.
 - Use the following search parameters: Instrument *ESI-TRAP*, variable
   modification *oxidation*, search databases *contaminants and
   SwissProt*, enzyme *Trypsin* with up to 1 mis-cleavage, taxonomy
   *Homo sapiens*.
-- Repeat the search without taxonomic group.
+- Interpet the results: what proteins have been identified? Which one
+  do you think was the one in the gel band? Why do you find more than
+  one protein?
+
+- The top hit above has been cut out of a unique gel band. It has been
+  produced in vivo in an engineered *E. coli* strand. Repeat the
+  search without the taxonomic group. What can you say?
 
 ###
 
