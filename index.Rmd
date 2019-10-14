@@ -5,13 +5,15 @@ date: "14 October 2019"
 output: slidy_presentation
 ---
 
-
-
+```{r, echo=FALSE, warning = FALSE, message = FALSE}
+library("tidyverse")
+library("ggrepel")
+```
 
 # Mass spectrometry
 
 - MS plays a central role for high-throughput proteomics.
-- Review of how MS works.
+- Review of [how MS works](https://uclouvain-cbio.github.io/LSTAT2340/).
 
 # Peptide mass fingerprinting 
 
@@ -67,6 +69,7 @@ Taxonomy: Homo sapiens
   produced in vivo in *E. coli*. Repeat the search without the
   taxonomic group. What can you say?
 
+
 # Interactomics 
 
 BioID (Roux *et al.*, 2012) is a technique based on proximity
@@ -88,8 +91,6 @@ that interact with the bait protein.
 ---
 
 ```{r, echo = FALSE, warning = FALSE, fig.cap = "", fig.heigth = 10, fig.width = 12}
-suppressPackageStartupMessages(library("tidyverse"))
-suppressPackageStartupMessages(library("ggrepel"))
 res <- suppressMessages(read_csv("data/BioID3.csv")) %>%
     rowwise() %>%
     mutate(pval = t.test(c(WT_1, WT_2, WT_3),
