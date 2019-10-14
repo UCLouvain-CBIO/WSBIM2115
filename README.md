@@ -10,7 +10,8 @@
 ### Peptide mass finderprinting
 
 - Using the free [Matrix Science Mascot server](http://www.matrixscience.com/search_form_select.html)
-- PMF input data
+- PMF input data. Serach the data against the human database using
+  trypsin and setting 0 missed cleavages
 
 ```
 802.5
@@ -37,6 +38,9 @@
 1328.7
 2272.8
 ```
+
+- What protein do you identify? Verify that you recover the masses in
+  the input.
 
 ### MSMS search
 
