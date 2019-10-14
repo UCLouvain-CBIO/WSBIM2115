@@ -3,9 +3,9 @@
 ## Proteomics bioinformatics
 
 ### Mass spectrometry
+
 - MS plays a central role for high-throughput proteomics.
 - Review of how MS works.
-
 
 ### Peptide mass finderprinting
 
@@ -44,7 +44,7 @@
 
 ### MSMS search
 
-- Download the [input data](./test.mgf) (in [mgf
+- Download the [input data](./data/test.mgf) (in [mgf
   format](http://www.matrixscience.com/help/data_file_help.html)) and
   familiarise yourself with it.
 - Plot (by hand if you prefer) one of these MSMS spectra. The smallest
@@ -72,10 +72,27 @@
   produced in vivo in an engineered *E. coli* strand. Repeat the
   search without the taxonomic group. What can you say?
 
-###
+### Interactomics
 
-Find and download the PKA sequences for the human, fly, chicken,
-xenophus, ... (and possibly a couple of other ones)
+BioID (Roux *et al.*, 2012) is a technique based on proximity
+labelling technique used to identify interacting partners.
+
+![BioID2 explanation](./figs/bioid.png)
+
+Download this [BioID](./data/BioID3.csv) dataset. Based on the
+principle demonstrated above, identify the most likely proteins X that
+interact with the bait protein.
+
+
+Roux, K. J., Kim, D. I., Raida, M. & Burke, B. [A promiscuous biotin
+ligase fusion protein identifies proximal and interacting proteins in
+mammalian cells](http://jcb.rupress.org/content/196/6/801). J. Cell
+Biol. 196, 801–810 (2012).
+
+### Conserved domains
+
+Find and download the [PKA sequences](./data/pka.fas) for the human,
+fly, chicken, xenophus, ... (and possibly a couple of other ones)
 
 
 
