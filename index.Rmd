@@ -1,9 +1,12 @@
 ---
-title: "WSBIM2115 - Proteomics bioinformatics"
+title: "WSBIM2115 - Proteomics bioinformatics <br> https://uclouvain-cbio.github.io/WSBIM2115"       
 author: "Laurent Gatto"
 date: "14 October 2019"
 output: slidy_presentation
 ---
+
+
+
 
 # Mass spectrometry
 
@@ -21,8 +24,7 @@ output: slidy_presentation
 - What protein do you identify? Verify that you recover the masses in
   the input.
   
-  
-# MSMS search 
+# MSMS search
 
 - Download the [input data](./data/test.mgf) (in [mgf
   format](http://www.matrixscience.com/help/data_file_help.html)) and
@@ -38,6 +40,7 @@ output: slidy_presentation
   for purification.
 
 ---
+
 
 ![](./figs/gel.jpg)
 
@@ -82,6 +85,29 @@ that interact with the bait protein.
 > cells](http://jcb.rupress.org/content/196/6/801). J. Cell Biol. 196,
 > 801–810 (2012).
 
+---
+
+```{r, echo = FALSE, warning = FALSE, fig.cap = "", fig.heigth = 10, fig.width = 12}
+suppressPackageStartupMessages(library("tidyverse"))
+suppressPackageStartupMessages(library("ggrepel"))
+res <- suppressMessages(read_csv("data/BioID3.csv")) %>%
+    rowwise() %>%
+    mutate(pval = t.test(c(WT_1, WT_2, WT_3),
+                         c(MUT_1, MUT_2, MUT_3))$p.value) %>%
+    rowwise() %>%
+    mutate(mean_wt = mean(c(WT_1, WT_2, WT_3)),
+           mean_mut = mean(c(MUT_1, MUT_2, MUT_3))) %>%    
+    mutate(logFC = log((mean_wt + 1) / (mean_mut + 1)))
+
+ggplot(data = res,
+       aes(x = logFC, y = -log10(pval),
+           label = gene_symbol)) +
+    geom_point() +
+    geom_hline(yintercept = -log10(0.05)) + 
+    geom_vline(xintercept = c(-1, 1)) +
+    geom_text_repel(data = subset(res, pval < 0.01 & logFC > 0.5))
+```
+
 
 # Conserved domains in PKA
 
@@ -96,7 +122,7 @@ that interact with the bait protein.
 - Identify which regions of the sequence are conserved.
 
 
-## Structure of the catalytic subunit of PKA (kinase domain) 
+# Structure of the catalytic subunit of PKA (kinase domain) 
 
 ![](./figs/pka.png)
 
