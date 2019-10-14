@@ -20,7 +20,7 @@ library("ggrepel")
 - Using the free [Matrix Science Mascot
   server](http://www.matrixscience.com/search_form_select.html)
 
-- Download the [PMF input data](./data/pmf.txt) and serach it] against
+- Download the [PMF input data](./data/pmf.txt) and search it against
   the human database using trypsin and setting 0 missed cleavages.
   
 - What protein do you identify? Verify that you recover the masses in
