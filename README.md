@@ -79,9 +79,9 @@ labelling technique used to identify interacting partners.
 
 ![BioID2 explanation](./figs/bioid.png)
 
-Download this [BioID](./data/BioID3.csv) dataset. Based on the
-principle demonstrated above, identify the most likely proteins X that
-interact with the bait protein.
+Download this [BioID dataset](./data/BioID3.csv) (csv file). Based on
+the principle demonstrated above, identify the most likely proteins X
+that interact with the bait protein.
 
 
 Roux, K. J., Kim, D. I., Raida, M. & Burke, B. [A promiscuous biotin
@@ -89,13 +89,31 @@ ligase fusion protein identifies proximal and interacting proteins in
 mammalian cells](http://jcb.rupress.org/content/196/6/801). J. Cell
 Biol. 196, 801–810 (2012).
 
-### Conserved domains
+### Conserved domains in cyclic AMP-dependent protein kinase (PKA)
 
-Find and download the [PKA sequences](./data/pka.fas) for the human,
-fly, chicken, xenophus, ... (and possibly a couple of other ones)
+- Find and download *cyclic AMP-dependent protein kinase (PKA)
+  catalytic subunit (PKA)* sequences for the human
+  ([P17612](https://www.uniprot.org/uniprot/P17612)), fly, chicken,
+  xenophus, ... (and possibly a couple of other ones) from Uniprot.
 
+- Align then using [Clustal
+  Omega](https://www.ebi.ac.uk/Tools/msa/clustalo/).
 
+- Identify which regions of the sequence are conserved.
 
-PKA structures
-- https://www.ncbi.nlm.nih.gov/Structure/mmdb/mmdbsrv.cgi?uid=71781
-- https://www.ncbi.nlm.nih.gov/Structure/mmdb/mmdbsrv.cgi?uid=71583
+Structure of the catalytic subunit of PKA (kinase domain):
+
+- N-terminal: ATP binding
+- C-terminal: substrate binding
+
+![Structure of the catalytic subunit of PKA](./figs/pka.png)
+![catalytic subunit of PKA 3D](./figs/pka3d.png)
+
+- Glycine-rich region: binds the phospates of the ATP.
+- K72: bind the alpha- and beta-phosphate of TAP.
+- E91: when not active, glutamate 91 forms salt bridge with lysine
+  168; breaks upon activation of the protein.
+- K168: transition state stabilization.
+- D166: base catalyst.
+- D184, N171: Mg2+ binding (Mg-ATP)
+- E208, D230: substrate binding (substrate RRXS recognition motif).
