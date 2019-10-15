@@ -41,6 +41,14 @@ library("ggrepel")
   (GST)](https://en.wikipedia.org/wiki/Glutathione_S-transferase#GST-tags_and_the_GST_pull-down_assay)
   for purification.
 
+<!-- --- -->
+
+<!-- ```{r, echo = FALSE, fig.cap = "", warning = FALSE} -->
+<!-- suppressPackageStartupMessages(library("MSnbase")) -->
+<!-- x <- readMgfData("data/test.mgf") -->
+<!-- plot(x[[234]]) -->
+<!-- ``` -->
+
 ---
 
 
