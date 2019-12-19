@@ -112,6 +112,8 @@ ggplot(data = res,
        aes(x = logFC, y = -log10(pval),
            label = gene_symbol)) +
     geom_point() +
+    xlab(expression(log[2](frac(WT, mutant)))) +
+    ylab(expression(-log[10](p-value))) +    
     geom_hline(yintercept = -log10(0.05)) + 
     geom_vline(xintercept = c(-1, 1)) +
     geom_text_repel(data = subset(res, pval < 0.01 & logFC > 0.5))
